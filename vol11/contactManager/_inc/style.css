@@ -1,0 +1,331 @@
+/* Reset style
+------------------------------ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+	font-size: 16px;
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/* Common
+------------------------------ */
+
+body {
+	background-color: #f7f7f7;
+}
+
+.wrap h1 {
+	margin-bottom: 20px;
+}
+
+.wrap h2 {
+	margin-bottom: 20px;
+}
+
+.btn_area {
+	margin-bottom: 20px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 15px;
+	border-radius: 4px;
+	color: #fff;
+	font-size: .86rem;
+	text-decoration: none;
+	background: #4383ef;
+	transition-property: background-color;
+	transition-duration: .2s;
+	transition-timing-function: ease-in;
+}
+.btn:hover {
+	color: #fff;
+	background: #6a9ff7;
+}
+
+.link_back {
+	margin-bottom: 20px;
+}
+.link_back a {
+	font-size: .86rem;
+}
+
+.form_area {
+	padding: 40px;
+	width: 100%;
+	border-radius: 10px;
+	box-sizing: border-box;
+	background: #fff;
+}
+
+.message {
+	margin-bottom: 40px;
+	padding: 20px;
+	list-style-type: none;
+	border-radius: 10px;
+}
+
+.success_message {
+	animation: messageAnimation 2s ease-in 1;
+	color: #5a9900;
+	background: #d6f6a9;
+}
+
+.error_message {
+	animation: messageAnimation 2s ease-in 1;
+	color: #c00;
+	background: #ffcbcb;
+}
+
+@keyframes messageAnimation {
+	0%, 90% {
+		transform: translateY(1.0);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.error_list {
+	background: #ffcbcb;
+}
+.error_list li {
+	margin-bottom: 5px;
+	font-size: .93rem;
+	line-height: 1.6em;
+	color: #c00;
+}
+.error_list li::before {
+	display: inline-block;
+	margin-top: 7px;
+	margin-right:10px;
+	content: "";
+	width: 8px;
+	height: 8px;
+	vertical-align: top;
+	border-radius: 4px;
+	background-color: #c00;
+}
+.error_list li:last-child {
+	margin-bottom: 0;
+}
+
+.form_area input,
+.form_area select,
+.form_area textarea {
+	font-size: 1.0rem;
+}
+
+.form_area input,
+.form_area textarea {
+	padding: 5px 10px;
+}
+
+.form_area .input_label {
+	display: inline-block;
+	margin-left: 20px;
+	padding: 10px 0;
+	vertical-align: top;
+}
+.form_area .first_label {
+	margin-left: 0;
+}
+
+.form_area select {
+	padding: 5px 40px 5px 10px;
+}
+
+.form_area input[type=submit] {
+	appearance: none;
+	display: inline-block;
+	padding: 7px 15px;
+	border-radius: 4px;
+	border: none;
+	color: #fff;
+	font-size: 0.86rem;
+	text-decoration: none;
+	background: #4383ef;
+	transition-property: background-color;
+	transition-duration: .2s;
+	transition-timing-function: ease-in;
+}
+.form_area input[type=submit]:hover {
+	color: #fff;
+	background: #6a9ff7;
+}
+
+
+
+/* Top
+------------------------------ */
+
+.data_table {
+	width: 100%;
+	border: 1px solid #bbb;
+}
+
+.data_table tr:nth-child(even) {
+	background-color: #eee;
+}
+
+.data_table th {
+	padding: 15px 20px;
+	color: #222;
+	font-size: .86rem;
+	font-weight: bold;
+	text-align: left;
+	background: #91c6f3;
+}
+
+.data_table th:nth-child(1),
+.data_table th:nth-child(2) {
+	width: 15%;
+}
+.data_table th:nth-child(3) {
+	width: 20%;
+}
+.data_table th:nth-child(4) {
+	width: 35%;
+}
+.data_table th:nth-child(5) {
+	width: 15%;
+}
+
+.data_table td {
+	padding: 10px 20px;
+	color: #222;
+	font-size: .86rem;
+	line-height: 1.8em;
+}
+
+
+
+/* Create & Edit & Delete
+------------------------------ */
+
+.form_list {
+	flex-wrap: wrap;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.form_list dt {
+	margin-bottom: 10px;
+	width: 100%;
+	font-size: 0.93rem;
+}
+
+.form_list dd {
+	margin-bottom: 30px;
+	width: 100%;
+	font-size: 0.86rem;
+}
+
+.form_list dd input[type=text],
+.form_list dd textarea {
+	min-width: 50%;
+}
+
+.form_area .link_back {
+	margin-bottom: 0;
+}
+
+.text_delete {
+	padding: 7px 10px;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	color: #222;
+	font-size: .93rem;
+	line-height: 1.8em;
+	box-sizing: border-box;
+}
